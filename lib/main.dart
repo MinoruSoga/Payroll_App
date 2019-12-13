@@ -1,7 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:payroll_app/screens/employee_screen.dart';
 import 'package:payroll_app/screens/home_screen.dart';
 import 'package:payroll_app/screens/login_screen.dart';
+import 'package:payroll_app/screens/payslip_screen.dart';
+import 'package:payroll_app/screens/place_screen.dart';
 import 'package:payroll_app/screens/signup_screen.dart';
 
 void main() => runApp(MyApp());
@@ -31,6 +34,9 @@ class MyApp extends StatelessWidget {
           LoginScreen.id: (context) => LoginScreen(),
           SignupScreen.id: (context) => SignupScreen(),
           HomeScreen.id: (context) => HomeScreen(),
+          PlaceScreen.id: (context) => PlaceScreen(),
+          EmployeeScreen.id: (context) => EmployeeScreen(),
+          PayslipScreen.id: (context) => PayslipScreen(),
         });
   }
 }
