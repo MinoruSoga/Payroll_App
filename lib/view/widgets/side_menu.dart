@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:payroll_app/screens/employee_screen.dart';
-import 'package:payroll_app/screens/home_screen.dart';
-import 'package:payroll_app/screens/payslip_screen.dart';
-import 'package:payroll_app/screens/place_screen.dart';
+import 'package:payroll_app/view/screens/employee_screen.dart';
+import 'package:payroll_app/view/screens/home_screen.dart';
+import 'package:payroll_app/view/screens/payslip_screen.dart';
+import 'package:payroll_app/view/screens/place_screen.dart';
 
 class SideMenu extends StatelessWidget {
   @override

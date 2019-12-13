@@ -1,25 +1,25 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:payroll_app/widgets/side_menu.dart';
+import 'package:payroll_app/view/widgets/side_menu.dart';
 
-class EmployeeScreen extends StatefulWidget {
-  static final String id = 'employee_screen';
+class PlaceScreen extends StatefulWidget {
+  static final String id = 'place_screen';
   @override
-  _EmployeeScreenState createState() => _EmployeeScreenState();
+  _PlaceScreenState createState() => _PlaceScreenState();
 }
 
-class _EmployeeScreenState extends State<EmployeeScreen> {
+class _PlaceScreenState extends State<PlaceScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Employee Screen"),
+        title: Text("Place Screen"),
         elevation: defaultTargetPlatform == TargetPlatform.android ? 5.0 : 0.0,
       ),
       drawer: SideMenu(),
       body: Container(
         child: Center(
-          child: Text("Employee Page"),
+          child: Text("Place Page"),
         ),
       ),
     );

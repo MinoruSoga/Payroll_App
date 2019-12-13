@@ -1,25 +1,25 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:payroll_app/widgets/side_menu.dart';
+import 'package:payroll_app/view/widgets/side_menu.dart';
 
-class PayslipScreen extends StatefulWidget {
-  static final String id = 'payslip_screen';
+class HomeScreen extends StatefulWidget {
+  static final String id = 'home_screen';
   @override
-  _PayslipScreenState createState() => _PayslipScreenState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _PayslipScreenState extends State<PayslipScreen> {
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Payslip Screen"),
+        title: Text("Home Screen"),
         elevation: defaultTargetPlatform == TargetPlatform.android ? 5.0 : 0.0,
       ),
       drawer: SideMenu(),
       body: Container(
         child: Center(
-          child: Text("Payslip Page"),
+          child: Text("Home Page"),
         ),
       ),
     );

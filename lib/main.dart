@@ -1,11 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:payroll_app/screens/employee_screen.dart';
-import 'package:payroll_app/screens/home_screen.dart';
 import 'package:payroll_app/screens/login_screen.dart';
-import 'package:payroll_app/screens/payslip_screen.dart';
-import 'package:payroll_app/screens/place_screen.dart';
 import 'package:payroll_app/screens/signup_screen.dart';
+import 'package:payroll_app/view/screens/employee_screen.dart';
+import 'package:payroll_app/view/screens/home_screen.dart';
+import 'package:payroll_app/view/screens/payslip_screen.dart';
+import 'package:payroll_app/view/screens/place_screen.dart';
 
 void main() => runApp(MyApp());
 
