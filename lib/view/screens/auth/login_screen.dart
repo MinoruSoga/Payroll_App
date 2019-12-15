@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:payroll_app/screens/signup_screen.dart';
 import 'package:payroll_app/services/auth_service.dart';
 import 'package:payroll_app/utilities/constants.dart';
+import 'package:payroll_app/view/screens/auth/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   static final String id = 'login_screen';

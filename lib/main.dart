@@ -1,11 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:payroll_app/screens/login_screen.dart';
-import 'package:payroll_app/screens/signup_screen.dart';
 import 'package:payroll_app/view/screens/employee_screen.dart';
 import 'package:payroll_app/view/screens/home_screen.dart';
+import 'package:payroll_app/view/screens/auth/login_screen.dart';
 import 'package:payroll_app/view/screens/payslip_screen.dart';
 import 'package:payroll_app/view/screens/place_screen.dart';
+import 'package:payroll_app/view/screens/auth/signup_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,11 +14,12 @@ class MyApp extends StatelessWidget {
     return StreamBuilder<FirebaseUser>(
       stream: FirebaseAuth.instance.onAuthStateChanged,
       builder: (BuildContext context, snapshot) {
-        if (snapshot.hasData) {
-          return HomeScreen();
-        } else {
-          return LoginScreen();
-        }
+        // if (snapshot.hasData) {
+        //   return HomeScreen();
+        // } else {
+        //   return LoginScreen();
+        // }
+        return HomeScreen();
       },
     );
   }

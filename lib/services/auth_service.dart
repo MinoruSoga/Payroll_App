@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:payroll_app/screens/login_screen.dart';
 import 'package:payroll_app/view/screens/home_screen.dart';
+import 'package:payroll_app/view/screens/auth/login_screen.dart';
 
 class AuthService {
   static final _auth = FirebaseAuth.instance;
